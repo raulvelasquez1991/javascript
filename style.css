@@ -1,0 +1,97 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #e8f4f8;
+    padding: 20px;
+}
+
+header { 
+    background-color: #333; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+nav { 
+    background-color: #555; 
+    padding: 10px; 
+    text-align: center;
+    margin: 10px 0;
+}
+
+nav button {
+    background-color: #4CAF50;
+    color: white;
+    border: none; 
+    padding: 10px 15px; 
+    margin: 5px;
+    cursor: pointer;
+}
+
+nav button:hover { 
+    background-color: #45a049;
+}
+
+.submenu button {
+    background-color: #008CBA;
+    color: white;
+    border: none; 
+    padding: 8px 12px; 
+    margin: 5px;
+    cursor: pointer;
+}
+
+.submenu button:hover { 
+    background-color: #007399;
+}
+
+.submenu { 
+    display: none; 
+    text-align: center; 
+    padding: 15px; 
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+.submenu h2 { 
+    color: #333; 
+}
+
+section { 
+    padding: 15px; 
+    display: none;
+    background-color: white;
+    border: 2px solid #999;
+    margin: 10px 0;
+}
+
+section h2 { 
+    color: #333; 
+    font-size: 1.3em;
+}
+
+.visible { 
+    display: block;
+}
+
+section button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+section button:hover {
+    background-color: #45a049;
+}
+
+.output { 
+    background-color: #f0f0f0; 
+    padding: 10px; 
+    margin-top: 10px; 
+    border: 1px solid #999;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+
