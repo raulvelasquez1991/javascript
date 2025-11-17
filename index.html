@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Ejercicios en JavaScript Áreas Temáticas</h1>
+</header>
+
+<!-- MENÚ PRINCIPAL -->
+<nav>
+    <button onclick="showArea('saludMenu')">Área de Salud</button>
+    <button onclick="showArea('ambienteMenu')">Área de Medio Ambiente</button>
+    <button onclick="showArea('astroMenu')">Área de Astronomía</button>
+</nav>
+
+<!-- SUBMENÚS -->
+
+<!-- SALUD -->
+<div id="saludMenu" class="submenu">
+    <h2>Área de Salud</h2>
+    <button onclick="show('salud1')">1. IF – Presión arterial</button>
+    <button onclick="show('salud2')">2. FOR – Temperaturas</button>
+    <button onclick="show('salud3')">3. WHILE – Fiebre</button>
+    <button onclick="show('salud4')">4. SWITCH – Triage</button>
+    <button onclick="show('salud5')">5. DO WHILE – SpO2</button>
+</div>
+
+<!-- AMBIENTE -->
+<div id="ambienteMenu" class="submenu">
+    <h2>Área de Medio Ambiente</h2>
+    <button onclick="show('amb1')">1. IF – AQI</button>
+    <button onclick="show('amb2')">2. FOR – Ruido</button>
+    <button onclick="show('amb3')">3. WHILE – Focos de calor</button>
+    <button onclick="show('amb4')">4. SWITCH – Residuo</button>
+    <button onclick="show('amb5')">5. DO WHILE – Río</button>
+</div>
+
+<!-- ASTRONOMÍA -->
+<div id="astroMenu" class="submenu">
+    <h2>Área de Astronomía</h2>
+    <button onclick="show('ast1')">1. IF – Brillo estelar</button>
+    <button onclick="show('ast2')">2. FOR – Distancias planetarias</button>
+    <button onclick="show('ast3')">3. WHILE – Cráteres</button>
+    <button onclick="show('ast4')">4. SWITCH – Cuerpo celeste</button>
+    <button onclick="show('ast5')">5. DO WHILE – Luz</button>
+</div>
+
+<!-- SECCIONES -->
+
+<!-- SALUD -->
+<section id="salud1">
+    <h2>IF Clasificación de presión arterial</h2>
+    <button onclick="presion()">Ejecutar</button>
+    <div class="output" id="out1"></div>
+</section>
+
+<section id="salud2">
+    <h2>FOR Registrar temperatura</h2>
+    <button onclick="tempPacientes()">Ejecutar</button>
+    <div class="output" id="out2"></div>
+</section>
+
+<section id="salud3">
+    <h2>WHILE Contar fiebre</h2>
+    <button onclick="contarFiebre()">Ejecutar</button>
+    <div class="output" id="out3"></div>
+</section>
+
+<section id="salud4">
+    <h2>SWITCH Triage</h2>
+    <button onclick="triage()">Ejecutar</button>
+    <div class="output" id="out4"></div>
+</section>
+
+<section id="salud5">
+    <h2>DO WHILE Saturación SpO2</h2>
+    <button onclick="oxigeno()">Ejecutar</button>
+    <div class="output" id="out5"></div>
+</section>
+
+<!-- AMBIENTE -->
+<section id="amb1">
+    <h2>IF Calidad del aire</h2>
+    <button onclick="aqi()">Ejecutar</button>
+    <div class="output" id="out6"></div>
+</section>
+
+<section id="amb2">
+    <h2>FOR Ruido ambiental</h2>
+    <button onclick="ruido()">Ejecutar</button>
+    <div class="output" id="out7"></div>
+</section>
+
+<section id="amb3">
+    <h2>WHILE Focos de calor</h2>
+    <button onclick="calor()">Ejecutar</button>
+    <div class="output" id="out8"></div>
+</section>
+
+<section id="amb4">
+    <h2>SWITCH Tipo de residuo</h2>
+    <button onclick="residuo()">Ejecutar</button>
+    <div class="output" id="out9"></div>
+</section>
+
+<section id="amb5">
+    <h2>DO WHILE Niveles del río</h2>
+    <button onclick="rio()">Ejecutar</button>
+    <div class="output" id="out10"></div>
+</section>
+
+<!-- ASTRONOMÍA -->
+<section id="ast1">
+    <h2>IF Brillo estelar</h2>
+    <button onclick="brillo()">Ejecutar</button>
+    <div class="output" id="out11"></div>
+</section>
+
+<section id="ast2">
+    <h2>FOR Distancias de planetas</h2>
+    <button onclick="planetas()">Ejecutar</button>
+    <div class="output" id="out12"></div>
+</section>
+
+<section id="ast3">
+    <h2>WHILE Cráteres lunares</h2>
+    <button onclick="crateres()">Ejecutar</button>
+    <div class="output" id="out13"></div>
+</section>
+
+<section id="ast4">
+    <h2>SWITCH Cuerpo celeste</h2>
+    <button onclick="cuerpo()">Ejecutar</button>
+    <div class="output" id="out14"></div>
+</section>
+
+<section id="ast5">
+    <h2>DO WHILE Niveles de luz</h2>
+    <button onclick="luz()">Ejecutar</button>
+    <div class="output" id="out15"></div>
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
+
